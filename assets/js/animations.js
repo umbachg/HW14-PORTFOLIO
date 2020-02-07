@@ -9,15 +9,16 @@ $(function () {
                 var btn = $(".btn");
 
                 card.on("click", function () {
-                    if (body.hasClass("is-open")) {
-                        body.removeClass("is-open");
-                        btn.html("View");
+                //     if (body.hasClass("is-open")) {
+                //         body.removeClass("is-open");
+                //         btn.html("View");
 
-                    } else {
+                //     }
+                //     else {
                         body.addClass("is-open");
                         btn.html("close");
                         TweenMax.set(".card", { clearProps: "all" });
-                    }
+                //     }
                 });
             },
             initHover: function (e) {
